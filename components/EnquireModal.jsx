@@ -11,13 +11,19 @@ const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
 const EnquireModal = ({ isOpen, setIsOpen }) => {
   const autoTriggered = useRef(false)
+  const intervalRef = useRef(null)
 
   useEffect(() => {
     if (autoTriggered.current) return
-    const timer = setTimeout(() => {
-      if (!autoTriggered.current) { autoTriggered.current = true; setIsOpen(true) }
+    const initial = setTimeout(() => {
+      autoTriggered.current = true
+      setIsOpen(true)
+      intervalRef.current = setInterval(() => setIsOpen(true), 20000)
     }, 10000)
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(initial)
+      if (intervalRef.current) clearInterval(intervalRef.current)
+    }
   }, [setIsOpen])
 
   useEffect(() => {
@@ -78,7 +84,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 Exclusive Benefits
               </span>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug uppercase tracking-tight" style={{ fontFamily: F_JOST }}>
-                We&apos;re Just a Message Away Advance
+                Book A Free Site Visit
               </h3>
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
                 <span style={{

@@ -31,12 +31,12 @@ const Amenities = ({ setIsOpen }) => {
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em',
           }}>
-            Business &amp;{' '}
-            <span style={{ color: 'var(--color-gold)' }}>Lifestyle Infrastructure</span>
+            Lifestyle &amp;{' '}
+            <span style={{ color: 'var(--color-gold)' }}>Wellness Amenities</span>
           </h2>
           <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
           <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
-            Shivalik Trophy is designed to offer a future-ready work environment supported by global infrastructure
+            Over 2,00,000 sq ft of curated amenities designed for sports, wellness, community and forest living
           </p>
         </div>
 
@@ -79,7 +79,7 @@ const Amenities = ({ setIsOpen }) => {
               <div style={{
                 position: 'absolute', bottom: 0, left: 0, right: 0,
                 background: hovered === idx
-                  ? 'linear-gradient(to top, rgba(3, 147, 148, 0.90) 0%, transparent 80%)'
+                  ? 'linear-gradient(to top, rgba(118, 51, 0, 0.90) 0%, transparent 80%)'
                   : 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 70%)',
                 padding: '32px 16px 14px',
                 transition: 'background 0.32s ease',

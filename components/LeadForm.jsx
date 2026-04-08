@@ -80,7 +80,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
     <form onSubmit={handleSubmit} className="flex flex-col gap-1">
       <input type="text" name="fullname" required placeholder="Enter full name" value={formData.fullname} onChange={handleChange}
         className={inputClass} style={{ fontFamily: F_SANS }} />
-      <input type="email" name="email" placeholder="Enter your Email" value={formData.email} onChange={handleChange}
+      <input type="email" name="email" placeholder="Email Id(optional)" value={formData.email} onChange={handleChange}
         className={inputClass} style={{ fontFamily: F_SANS }} />
       <input type="tel" name="phone" required placeholder="10-digit mobile number" maxLength={10} value={formData.phone} onChange={handleChange}
         className={inputClass} style={{ fontFamily: F_SANS }} />
@@ -88,7 +88,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
       {error && <p className="text-red-500 text-xs mt-1" style={{ fontFamily: F_SANS }}>{error}</p>}
 
       <div className="flex items-start gap-2 mt-3">
-        <input type="checkbox" id="privacy-lead" required className="mt-0.5 shrink-0" style={{ accentColor: GOLD }} />
+        <input type="checkbox" id="privacy-lead" required defaultChecked className="mt-0.5 shrink-0" style={{ accentColor: GOLD }} />
         <label htmlFor="privacy-lead" className="text-xs text-gray-500 leading-relaxed cursor-pointer" style={{ fontFamily: F_SANS }}>
           I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call. This will override DND / NDNC settings.
         </label>

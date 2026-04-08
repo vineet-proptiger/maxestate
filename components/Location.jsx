@@ -8,27 +8,27 @@ const categories = [
   {
     label: 'Connectivity',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M3 12h18M3 6h18M3 18h18" /></svg>,
-    items: ['Ahmedabad International Airport — 10 min drive', 'Gandhinagar Capital — 15 min drive', 'Ahmedabad City Centre — 20 min drive'],
+    items: ['IGI Airport — 20 min drive', 'Cyber City / DLF — 15 min drive', 'Ambience Mall — 10 min drive'],
   },
   {
-    label: 'Financial Institutions',
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>,
-    items: ['GIFT City IFSC Banking Units — On-site', 'BSE International Exchange (BSE-INX)', 'India INX (NSE International Exchange)'],
+    label: 'Healthcare',
+    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>,
+    items: ['Medanta — The Medicity, Gurugram', 'Fortis Memorial Research Institute', 'Artemis Hospital — Sector 51'],
   },
   {
-    label: 'Business Infrastructure',
+    label: 'Metro & Transport',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /></svg>,
-    items: ['GIFT SEZ — International Business Zone', 'GIFT Domestic Tariff Area (DTA)', 'Gujarat International Finance Tec-City'],
+    items: ['Sector 55-56 Metro Station — Nearby', 'Dwarka Expressway — Direct Access', 'NH-48 (Delhi-Gurugram Expressway)'],
   },
   {
     label: 'Education & Lifestyle',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>,
-    items: ['CEPT University — 15 km', 'IIM Ahmedabad — 20 km', 'Premium Hotels & Service Apartments'],
+    items: ['Delhi Public School — Sector 45', 'GD Goenka World School — Nearby', 'Premium Malls, Dining & Entertainment'],
   },
   {
-    label: 'Growth Drivers',
+    label: 'Investment & Growth',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></svg>,
-    items: ["India's First Operational Smart City", 'Dedicated metro connectivity planned', 'Over 500+ global companies already at GIFT'],
+    items: ['Planned Global City — Adjacent', 'High Appreciation Corridor on Dwarka Expressway', 'Strong Rental Yield Potential'],
   },
 ]
 
@@ -54,7 +54,7 @@ const Location = () => {
             fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)',
             fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase',
             border: '1px solid var(--color-gold-light)', marginBottom: '10px',
-          }}>GIFT City, Ahmedabad</span>
+          }}>Sub-Tehsil, Harsaru, Sector 36A, Gurugram, Haryana 122006</span>
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em',
@@ -64,7 +64,7 @@ const Location = () => {
           </h2>
           <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
           <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
-            Strategically positioned at India's most prestigious financial address
+            Strategically located at Sub-Tehsil, Harsaru, Sector 36A, Gurugram — seamlessly connected to Delhi, Airport, and business hubs
           </p>
         </div>
 
@@ -162,7 +162,7 @@ const Location = () => {
                 background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', zIndex: 10,
               }} />
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.3986891406886!2d72.67525631496565!3d23.15394688468637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e836d48bec9c7%3A0x2e68bf49fba14a5e!2sGIFT%20City%2C%20Gandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000"
+                src="https://maps.google.com/maps?q=Estate+360+by+Max+Estates,+Sector+36A,+Harsaru,+Gurugram,+Haryana+122006&output=embed"
                 width="100%" height="100%"
                 style={{ border: 0, minHeight: '420px', display: 'block' }}
                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -182,7 +182,7 @@ const Location = () => {
                   color: '#fff', fontSize: '11px', fontFamily: F_JOST,
                   fontWeight: '700', letterSpacing: '0.04em'
                 }}>
-                  GIFT City, Gandhinagar
+                  Sector 36A, Harsaru, Gurugram 122006
                 </span>
               </div>
             </div>

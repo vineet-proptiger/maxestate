@@ -122,9 +122,9 @@ const ContactCTA = () => {
                     display: 'block', fontSize: '11px', fontWeight: '700', color: '#6b7280',
                     fontFamily: F_JOST, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '5px'
                   }}>
-                    Email Address <span style={{ color: '#9ca3af', fontSize: '10px' }}>(Optional)</span>
+                    Email Address
                   </label>
-                  <input name="email" value={form.email} onChange={handle} placeholder="Enter your Email"
+                  <input name="email" value={form.email} onChange={handle} placeholder="Email Id(optional)"
                     className="form-input" style={{ fontFamily: F_SANS, width: '100%' }} />
                 </div>
 
@@ -144,7 +144,7 @@ const ContactCTA = () => {
                 {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
 
                 <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', textAlign: 'left' }}>
-                  <input type="checkbox" required style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
+                  <input type="checkbox" required defaultChecked style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
                   <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
                     I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call.
                   </span>

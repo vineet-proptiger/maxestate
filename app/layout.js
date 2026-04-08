@@ -30,8 +30,8 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Shivalik Trophy | Premium Office Spaces — GIFT City, Ahmedabad',
-  description: 'Shivalik Trophy — Premium office spaces in GIFT City, Ahmedabad. Starting ₹3.5 Cr*. Located in SEZ zone. 10 minutes from airport. World-class infrastructure at India\'s Global Financial Hub.',
+  title: 'Max Estate 361 | Luxury 3 & 4 BHK + Penthouses — Sector 36A, Dwarka Expressway, Gurugram',
+  description: 'Max Estate 361 — Forest living residences by Max Estates in Sector 36A, Dwarka Expressway, Gurugram. 3 BHK, 4 BHK & Double-Storey Penthouses starting ₹6.65 Cr*. IGBC Platinum Pre-Certified. 2,50,000+ sq ft of lush greens.',
 }
 
 export default function RootLayout({ children }) {

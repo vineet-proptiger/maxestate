@@ -38,7 +38,7 @@ const Hero = ({ setIsOpen }) => {
             >
               {slides.map((src, idx) => (
                 <div key={idx} style={{ width: `${100 / slides.length}%`, flexShrink: 0, position: 'relative' }}>
-                  <Image src={src} alt={`Shivalik Trophy ${idx + 1}`} fill className="object-cover"
+                  <Image src={src} alt={`Max Estate 361 ${idx + 1}`} fill className="object-cover"
                     priority={idx === 0} sizes="(max-width: 1024px) 100vw, 62vw" />
                 </div>
               ))}
@@ -103,14 +103,14 @@ const Hero = ({ setIsOpen }) => {
                 textTransform: 'uppercase', letterSpacing: '0.02em'
               }}
                 data-aos="fade-up" data-aos-delay="200">
-                Shivalik Trophy
+                Max Estate 361
               </h1>
               <p style={{
                 fontFamily: F_SANS, fontSize: '13px', color: '#6b7280', margin: 0,
                 letterSpacing: '0.02em'
               }}
                 data-aos="fade-up" data-aos-delay="300">
-                GIFT City, Ahmedabad
+                Many habits, one habitat — Sub-Tehsil, Harsaru, Sector 36A, Gurugram, Haryana 122006
               </p>
             </div>
 
@@ -118,9 +118,9 @@ const Hero = ({ setIsOpen }) => {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}
               data-aos="fade-up" data-aos-delay="320">
               {[
-                'India\'s Global Financial Hub',
-                'SEZ Zone',
-                'GIFT City, Gandhinagar'
+                '3 & 4 BHK + Penthouses',
+                'IGBC Platinum Certified',
+                'Harsaru, Sector 36A, Gurugram 122006'
               ].map((tag, i) => (
                 <span key={i} style={{
                   display: 'inline-block',
@@ -145,11 +145,11 @@ const Hero = ({ setIsOpen }) => {
               boxShadow: '0 6px 20px var(--color-shadow-inner)',
             }} data-aos="fade-up" data-aos-delay="400">
               {[
-                'Located in SEZ at GIFT City',
-                'Just 10 Minutes Drive to Airport',
-                'World-Class Infrastructure & Smart Ecosystem',
-                'High Growth Investment Destination',
-                'Limited Inventory Available',
+                '2,50,000+ Sq Ft of Lush Green Forest',
+                '1,000+ Native Plants across 50+ Species',
+                'IGBC Platinum Pre-Certified Development',
+                'Integrated Senior Living by Antara',
+                'Starting from ₹ 2.25 Cr — Limited Units',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0' }}>
@@ -182,25 +182,32 @@ const Hero = ({ setIsOpen }) => {
               textAlign: 'center',
               background: 'var(--color-bg-muted)',
               borderRadius: '10px',
-              padding: '10px 12px',
+              padding: '12px 16px',
             }} data-aos="fade-up" data-aos-delay="500">
               <p style={{
                 fontFamily: F_SANS, fontSize: '12px', color: '#6b7280',
-                margin: '0 0 2px', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '600'
+                margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: '700'
               }}>
                 Starting From
               </p>
-              <div className="flex items-center justify-center gap-2 sm:gap-3 flex-nowrap whitespace-nowrap">
-                <span className="line-through font-medium opacity-60 text-[14px] sm:text-[18px]" style={{ fontFamily: F_SANS, color: GOLD }}>
-                  ₹ 4.10 Cr*
+              <div className="flex items-center justify-center gap-4 flex-wrap">
+                <span style={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                  color: 'var(--color-gold)',
+                  opacity: 0.6,
+                  textDecoration: 'line-through',
+                  fontFamily: F_JOST,
+                }}>
+                  ₹ 2.6 Cr
                 </span>
-                <span className="blink-price text-[18px] sm:text-[28px]" style={{
-                  fontWeight: '800',
+                <span className="blink-price text-[20px] sm:text-[32px]" style={{
+                  fontWeight: '700',
                   color: 'var(--color-gold)',
                   fontFamily: F_JOST,
                   lineHeight: 1,
                 }}>
-                  ₹ 3.5 Cr* Onwards
+                  ₹ 2.25 Cr* Onwards
                 </span>
               </div>
             </div>

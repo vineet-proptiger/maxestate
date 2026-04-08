@@ -11,7 +11,12 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
-const FULL_TEXT = `Shivalik Trophy is a landmark commercial development located in GIFT City, Ahmedabad, India's first operational smart city and a rapidly emerging global financial hub. Designed to cater to modern businesses, the project offers premium office spaces within a future-ready ecosystem driven by innovation, connectivity, and global standards. Strategically positioned within the SEZ zone of GIFT City, the development provides businesses with a competitive edge through tax benefits, robust infrastructure, and seamless connectivity. With cutting-edge design, efficient layouts, and a professional environment, Shivalik Trophy is ideal for enterprises, investors, and corporates seeking long-term growth and prestige.`
+const FULL_TEXT = `
+Own your dream home at Max Estates 361, Sector 36A, Dwarka Expressway, a premium residential destination crafted for modern urban living and timeless comfort. Strategically located just minutes away from the upcoming Global City, this landmark development offers unmatched connectivity to Delhi, IGI Airport, major business districts, and key locations across Gurugram, making it an ideal choice for both homeowners and investors.
+
+Designed to redefine luxury living, Max Estates 361 brings together elegant architecture, spacious residences, and thoughtfully planned layouts that maximize natural light, ventilation, and everyday comfort.
+
+`
 
 const inputStyle = {
   width: '100%',
@@ -116,11 +121,11 @@ const EarlyForm = () => {
           display: 'block', fontSize: '11px', fontWeight: '700', color: '#6b7280',
           fontFamily: F_JOST, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '5px'
         }}>
-          Email Address <span style={{ color: '#9ca3af', fontSize: '10px' }}>(Optional)</span>
+          Email Address
         </label>
         <input
           name="email" value={form.email} onChange={handle}
-          placeholder="Enter your Email"
+          placeholder="Email Id(optional)"
           onFocus={() => setFocused('email')}
           onBlur={() => setFocused('')}
           style={{
@@ -158,7 +163,7 @@ const EarlyForm = () => {
 
       {/* Consent */}
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', marginTop: 'auto' }}>
-        <input type="checkbox" required
+        <input type="checkbox" required defaultChecked
           style={{ accentColor: 'var(--color-gold)', marginTop: '3px', flexShrink: 0, width: '14px', height: '14px' }} />
         <span style={{ fontSize: '11px', color: '#9ca3af', fontFamily: F_SANS, lineHeight: 1.6 }}>
           I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call.
@@ -195,7 +200,7 @@ const Overview = () => (
           fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)',
           fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase',
           border: '1px solid var(--color-gold-light)', marginBottom: '10px',
-        }}>About the Project</span>
+        }}>Max Estate 361 New Launch</span>
         <h2 style={{
           fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
           color: '#111827', margin: 0, letterSpacing: '-0.01em',
@@ -220,9 +225,9 @@ const Overview = () => (
             boxShadow: '0 16px 48px rgba(0,0,0,0.14)',
             border: '3px solid #fff', width: '100%', minHeight: '340px',
           }}>
-            <Image src={overviewImage} alt="Shivalik Trophy" fill className="object-cover"
+            <Image src={overviewImage} alt="Max Estate 361" fill className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 33vw" priority />
-            <div style={{
+            {/* <div style={{
               position: 'absolute', bottom: 0, left: 0, right: 0,
               background: 'linear-gradient(to top, rgba(3, 147, 148, 0.92), transparent)',
               padding: '28px 16px 14px',
@@ -239,7 +244,7 @@ const Overview = () => (
               }}>
                 Ahmedabad, Gujarat
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -300,7 +305,7 @@ const Overview = () => (
                 fontFamily: F_JOST, fontWeight: '800', fontSize: '16px',
                 color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em'
               }}>
-                Get Early Phase Launch
+                Get Prelaunch Phase Advantage
               </h3>
               <p style={{
                 fontFamily: F_SANS, fontSize: '12px',

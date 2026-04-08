@@ -82,8 +82,8 @@ const ContactForm = () => {
         <label style={{
           display: 'block', fontSize: '11px', fontWeight: '700', color: '#6b7280',
           fontFamily: F_JOST, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '5px'
-        }}>Email Address <span style={{ color: '#9ca3af', fontSize: '10px' }}>(Optional)</span></label>
-        <input name="email" value={form.email} onChange={handle} placeholder="Enter your Email"
+        }}>Email Address</label>
+        <input name="email" value={form.email} onChange={handle} placeholder="Email Id(optional)"
           className="form-input" style={{ fontFamily: F_SANS, width: '100%' }} />
       </div>
 
@@ -100,7 +100,7 @@ const ContactForm = () => {
       {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
 
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-        <input type="checkbox" required style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
+        <input type="checkbox" required defaultChecked style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
         <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
           I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call.
         </span>
@@ -182,7 +182,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
               </div>
               <div>
                 <h3 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '18px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>
-                  Shivalik Trophy
+                  Max Estate 361
                 </h3>
 
               </div>
@@ -192,15 +192,23 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <p style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 20px' }}>
-              Shivalik is a reputed real estate developer known for delivering high-quality residential and commercial projects with a focus on innovation, design, and timely execution. With a strong presence in the NCR and beyond, they have built a legacy of trust and excellence, creating developments that combine modern infrastructure with long-term investment value.
+             Building spaces that inspire life, work, and well-being.
+
+Max Estates is committed to shaping sustainable Grade A developments across Delhi NCR, where thoughtful design meets elevated living.
+
+Our spaces are envisioned as more than just structures — they are vibrant ecosystems that foster collaboration, innovation, and a strong sense of community.
+
+With a carefully diversified portfolio across premium locations in NCR, spanning delivered landmarks, near-possession developments, and upcoming iconic projects, we continue to set new benchmarks in sustainable real estate.
+
+At the heart of every development lies our singular vision: to enhance well-being and become the most preferred real estate brand in NCR.
             </p>
 
             {/* Stats */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '22px' }}>
               {[
-                { value: '20+', label: 'Years of Experience' },
-                { value: '50+', label: 'Projects Delivered' },
-                { value: '5000+', label: 'Happy Families' },
+                { value: '15+', label: 'Years of Experience' },
+                { value: '20+', label: 'Projects Delivered' },
+                { value: '10000+', label: 'Happy Families' },
               ].map((stat, i) => (
                 <div key={i} style={{
                   textAlign: 'center', padding: '14px 8px',

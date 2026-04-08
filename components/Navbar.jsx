@@ -18,8 +18,8 @@ const navLinks = [
 /* ── Inline SVG Logo ─────────────────────────────────────────── */
 const ProjectLogo = () => (
   <img
-    src="/images/logo/SHIVALIK.webp"
-    alt="Shivalik Trophy"
+    src="/images/logo/estate361logo.webp"
+    alt="Max Estate 361"
     className="h-16 w-auto object-contain"
     style={{ maxWidth: '250px' }}
   />

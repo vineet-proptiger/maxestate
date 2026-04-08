@@ -6,30 +6,37 @@ const PRIMARY = "var(--color-primary)";
 
 const units = [
   {
-    type: "Premium Commercial Office",
+    type: "3 Bedroom+ Type A",
+    subtitle: "Senior Living Residences at Estate 361, Gurgaon",
     size: "On Request",
-    price: "₹ 3.5 Cr* Onwards",
-    oldPrice: "₹ 4.10 Cr*",
+    price: "₹ 2.25 Cr* Onwards",
+    oldPrice: null,
     btnText: "Get Cost Sheet",
-    features: ["Grade-A Finish", "SEZ Zone Benefits", "Smart Building Systems"],
+    features: [
+      "Senior-friendly features",
+      "Fully-finished residences",
+      "Wraparound balcony with living room",
+      "Exclusive corner apartments",
+      "Separation of guest areas and living spaces"
+    ],
     isPopular: false,
   },
   {
-    type: "Executive Office Space",
+    type: "4 Bedroom Residence",
     size: "On Request",
     price: "Ask For Price",
-    oldPrice: "₹ 6.25 Cr*",
+    oldPrice: null,
     btnText: "Ask Price",
-    features: ["Corner Unit Availability", "High-Speed Connectivity", "Dedicated Parking"],
+    features: ["Three-Side Open Views", "Dedicated Powder Room", "Staff Entry Provision"],
     isPopular: true,
   },
   {
-    type: "Corporate Floor",
+    type: "Double-Storey Penthouse",
     size: "On Request",
     price: "Ask For Price",
-    oldPrice: "₹ 11.50 Cr*",
+    oldPrice: null,
     btnText: "Ask Price",
-    features: ["Full Floor Options", "Custom Layout", "Premium Lobby Access"],
+    features: ["Sky Villa Experience", "Private Terrace", "Two Lift Lobbies Per Floor"],
     isPopular: false,
   },
 ];
@@ -61,7 +68,7 @@ const Pricing = ({ setIsOpen }) => {
             letterSpacing: '0.1em', textTransform: 'uppercase',
             border: '1px solid var(--color-gold-light)', marginBottom: '10px',
           }}>
-            Premium Commercial
+            Luxury Residential
           </span>
           <h2
             className="font-bold mb-4"
@@ -76,7 +83,7 @@ const Pricing = ({ setIsOpen }) => {
             className="max-w-2xl mx-auto text-gray-500"
             style={{ fontFamily: F_SANS, fontSize: '14px' }}
           >
-            Premium office spaces designed for global businesses at India&apos;s most prestigious financial address.
+            Forest living residences crafted for discerning homebuyers on Dwarka Expressway — Gurugram&apos;s most coveted address.
           </p>
         </div>
 
@@ -112,12 +119,19 @@ const Pricing = ({ setIsOpen }) => {
                 >
                   {unit.type}
                 </h3>
-                <div className="flex items-center gap-2 relative z-10">
-                  <span className="text-gray-400 text-[11px] uppercase tracking-wider" style={{ fontFamily: F_SANS }}>Size:</span>
-                  <p className="text-sm font-semibold" style={{ fontFamily: F_SANS, color: PRIMARY }}>
-                    {unit.size}
+                {unit.subtitle && (
+                  <p className="text-[15px] text-gray-500 relative z-10 mb-2 leading-tight" style={{ fontFamily: F_SANS }}>
+                    {unit.subtitle}
                   </p>
-                </div>
+                )}
+                {!unit.subtitle && (
+                  <div className="flex items-center gap-2 relative z-10">
+                    <span className="text-gray-400 text-[11px] uppercase tracking-wider" style={{ fontFamily: F_SANS }}>Size:</span>
+                    <p className="text-sm font-semibold" style={{ fontFamily: F_SANS, color: PRIMARY }}>
+                      {unit.size}
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Card Body */}

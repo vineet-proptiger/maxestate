@@ -5,47 +5,47 @@
 @import 'aos/dist/aos.css';
 
 /* ═══════════════════════════════════════════════════════════════
-   THEME VARIABLES — Shivalik Trophy (Teal-Cyan Theme)
+   THEME VARIABLES — Max Estate 361 (Navy Blue & Brown Theme)
    ═══════════════════════════════════════════════════════════════ */
 :root {
-  /* ── Teal-Cyan Brand Palette ── */
-  --color-gold: #039394;
-  /* Primary brand color */
-  --color-gold-light: #05b7b8;
+  /* ── Brown/Copper Accent Palette ── */
+  --color-gold: #763300;
+  /* Primary accent color */
+  --color-gold-light: #9a4400;
   /* Lighter vibrant variant */
-  --color-gold-dark: #026a6b;
+  --color-gold-dark: #5a2700;
   /* Deeper variant  */
-  --color-gold-bg: #f0fbfb;
+  --color-gold-bg: #fdf5f0;
   /* Tinted background variant */
 
-  /* ── Deep Primary Palette ── */
-  --color-primary: #013a3b;
-  --color-primary-light: #025a5b;
-  --color-primary-dark: #002223;
+  /* ── Deep Navy Blue Primary Palette ── */
+  --color-primary: #1E3D72;
+  --color-primary-light: #2a5299;
+  --color-primary-dark: #142a52;
 
-  --color-dark: #0f172a;
-  --color-dark-mid: #1e293b;
+  --color-dark: #0f1f3d;
+  --color-dark-mid: #1a2f5a;
 
   /* ── Background Palette ── */
   --color-bg: #ffffff;
   --color-bg-light: #ffffff;
-  --color-bg-muted: #f1f5f9;
+  --color-bg-muted: #f4f6fb;
 
   /* ── Text Palette ── */
-  --color-text: #012b2c;
-  --color-text-mid: #013a3b;
-  --color-text-light: #475569;
+  --color-text: #1E3D72;
+  --color-text-mid: #2a3f6a;
+  --color-text-light: #5a6a8a;
 
   /* ── UI ── */
   --btn-radius: 6px;
   --btn-radius-pill: 50px;
 
   /* ── Shadows ── */
-  --shadow-sm: 0 2px 8px rgba(3, 147, 148, 0.08);
-  --shadow-md: 0 8px 24px rgba(3, 147, 148, 0.14);
-  --shadow-lg: 0 20px 48px rgba(3, 147, 148, 0.18);
+  --shadow-sm: 0 2px 8px rgba(118, 51, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(118, 51, 0, 0.14);
+  --shadow-lg: 0 20px 48px rgba(118, 51, 0, 0.18);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
-  --color-shadow-inner: rgba(3, 147, 148, 0.10);
+  --color-shadow-inner: rgba(118, 51, 0, 0.10);
 }
 
 /* ─── Keyframes ─────────────────────────────────────────────── */
@@ -92,7 +92,7 @@
 
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(3, 147, 148, 0.5);
+    box-shadow: 0 0 0 0 rgba(118, 51, 0, 0.5);
   }
 
   50% {
@@ -225,7 +225,7 @@
 
   /* ── Teal-Cyan selection ── */
   ::selection {
-    background: rgba(3, 147, 148, 0.15);
+    background: rgba(118, 51, 0, 0.15);
     color: var(--color-gold-dark);
   }
 }
@@ -252,7 +252,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(3, 147, 148, 0.35);
+    box-shadow: 0 4px 14px rgba(118, 51, 0, 0.35);
     text-transform: uppercase;
     white-space: nowrap;
   }
@@ -284,7 +284,7 @@
 
   .btn-gold:active {
     transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(3, 147, 148, 0.20);
+    box-shadow: 0 4px 10px rgba(118, 51, 0, 0.20);
   }
 
   /* ══ OUTLINED RED BUTTON ══ */
@@ -367,7 +367,7 @@
     padding: 16px 10px;
     font-size: 12px;
     letter-spacing: 0.08em;
-    box-shadow: -4px 0 18px rgba(3, 147, 148, 0.28);
+    box-shadow: -4px 0 18px rgba(118, 51, 0, 0.28);
   }
 
   .btn-floating-tab:hover {
@@ -375,7 +375,7 @@
     background: #fff !important;
     color: var(--color-gold) !important;
     border-color: var(--color-gold);
-    box-shadow: -6px 0 24px rgba(3, 147, 148, 0.35);
+    box-shadow: -6px 0 24px rgba(118, 51, 0, 0.35);
   }
 
   /* ══ SECTION TITLE ══ */
@@ -414,7 +414,7 @@
 
   .form-input:focus {
     border-color: var(--color-gold);
-    box-shadow: 0 0 0 3px rgba(3, 147, 148, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 0 3px rgba(118, 51, 0, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04);
   }
 
   .form-input::placeholder {
@@ -469,7 +469,7 @@
   .pricing-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(3, 147, 148, 0.25);
+    border-color: rgba(118, 51, 0, 0.25);
   }
 
   .pricing-card:hover::after {
@@ -492,7 +492,7 @@
 
   .highlight-card:hover {
     border-color: var(--color-gold);
-    box-shadow: 0 8px 28px rgba(3, 147, 148, 0.15);
+    box-shadow: 0 8px 28px rgba(118, 51, 0, 0.15);
     transform: translateY(-4px);
   }
 
@@ -514,7 +514,7 @@
     border-color: var(--color-gold);
     background: var(--color-gold-bg);
     color: var(--color-gold);
-    box-shadow: 0 0 0 6px rgba(3, 147, 148, 0.08);
+    box-shadow: 0 0 0 6px rgba(118, 51, 0, 0.08);
   }
 
   /* ══ SECTION WRAPPER — white card on diamond bg ══ */
@@ -547,7 +547,7 @@
   right: 0;
   z-index: 999;
   display: flex;
-  box-shadow: 0 -4px 20px rgba(3, 147, 148, 0.18);
+  box-shadow: 0 -4px 20px rgba(118, 51, 0, 0.18);
 }
 
 @media (min-width: 1024px) {
@@ -561,12 +561,12 @@ nav.fixed {
   background: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(3, 147, 148, 0.08);
+  border-bottom: 1px solid rgba(118, 51, 0, 0.08);
 }
 
 /* ─── Teal-Cyan focus ring globally ─────────────────────────────────── */
 *:focus-visible {
-  outline: 2px solid rgba(3, 147, 148, 0.5);
+  outline: 2px solid rgba(118, 51, 0, 0.5);
   outline-offset: 3px;
   border-radius: 4px;
 }
