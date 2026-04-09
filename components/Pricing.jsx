@@ -6,7 +6,7 @@ const PRIMARY = "var(--color-primary)";
 
 const units = [
   {
-    type: "3 Bedroom+ Type A",
+    type: "1.5 BHK Floor Plan",
     size: "On Request",
     price: "₹ 2.5 Cr* Onwards",
     oldPrice: null,
@@ -19,7 +19,7 @@ const units = [
     isPopular: false,
   },
   {
-    type: "4 Bedroom Residence",
+    type: "2 BHK Floor Plan",
     size: "On Request",
     price: "Ask For Price",
     oldPrice: null,
@@ -32,7 +32,7 @@ const units = [
     isPopular: true,
   },
   {
-    type: "Double-Storey Penthouse",
+    type: "3 BHK Floor Plan",
     size: "On Request",
     price: "Ask For Price",
     oldPrice: null,
