@@ -54,7 +54,7 @@ const Location = () => {
             fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)',
             fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase',
             border: '1px solid var(--color-gold-light)', marginBottom: '10px',
-          }}>Sector 36A, Gurugram, Haryana 122006</span>
+          }}>Sector 36A,Dwarka Expressway Gurugram</span>
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em',
@@ -63,9 +63,9 @@ const Location = () => {
             <span style={{ color: 'var(--color-gold)' }}>Advantages</span>
           </h2>
           <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
-          <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
+          {/* <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
             Strategically located at Sector 36A, Gurugram — seamlessly connected to Delhi, Airport, and business hubs
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 items-stretch">
@@ -182,7 +182,7 @@ const Location = () => {
                   color: '#fff', fontSize: '11px', fontFamily: F_JOST,
                   fontWeight: '700', letterSpacing: '0.04em'
                 }}>
-                  Sector 36A, Gurugram 122006
+                  Sector 36A,Dwarka Expressway Gurugram
                 </span>
               </div>
             </div>

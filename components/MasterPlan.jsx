@@ -40,9 +40,9 @@ const MasterPlan = ({ setIsOpen }) => {
             <span style={{ color: 'var(--color-gold)' }}>Layout</span>
           </h2>
           <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
-          <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
+          {/* <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
             Thoughtfully designed spaces for modern business needs
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 items-stretch">

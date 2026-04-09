@@ -24,7 +24,11 @@ const units = [
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Ask Price",
-    features: ["Three-Side Open Views", "Dedicated Powder Room", "Staff Entry Provision"],
+    features: [
+      "Senior-friendly features",
+      "Fully-finished residences",
+      "Wraparound balcony with living room"
+    ],
     isPopular: true,
   },
   {
@@ -33,7 +37,11 @@ const units = [
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Ask Price",
-    features: ["Sky Villa Experience", "Private Terrace", "Two Lift Lobbies Per Floor"],
+    features: [
+      "Senior-friendly features",
+      "Fully-finished residences",
+      "Wraparound balcony with living room"
+    ],
     isPopular: false,
   },
 ];
@@ -65,7 +73,7 @@ const Pricing = ({ setIsOpen }) => {
             letterSpacing: '0.1em', textTransform: 'uppercase',
             border: '1px solid var(--color-gold-light)', marginBottom: '10px',
           }}>
-            Luxury Residential
+            PREMIUM RESIDENCES
           </span>
           <h2
             className="font-bold mb-4"
@@ -76,12 +84,12 @@ const Pricing = ({ setIsOpen }) => {
 
           <div className="w-20 h-1 mx-auto rounded-full mb-6" style={{ background: GOLD }} />
 
-          <p
+          {/* <p
             className="max-w-2xl mx-auto text-gray-500"
             style={{ fontFamily: F_SANS, fontSize: '14px' }}
           >
             Forest living residences crafted for discerning homebuyers on Dwarka Expressway — Gurugram&apos;s most coveted address.
-          </p>
+          </p> */}
         </div>
 
         {/* Cards Grid */}

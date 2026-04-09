@@ -177,7 +177,7 @@ const EarlyForm = () => {
           strokeLinecap="round" strokeLinejoin="round">
           <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
         </svg>
-        {loading ? 'Submitting...' : 'Submit Details'}
+        {loading ? 'Submitting...' : 'Book Now'}
       </button>
     </form>
   )
@@ -305,13 +305,13 @@ const Overview = () => (
                 fontFamily: F_JOST, fontWeight: '800', fontSize: '16px',
                 color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em'
               }}>
-                Get Prelaunch Phase Advantage
+                Get Early Booking Advantage
               </h3>
               <p style={{
                 fontFamily: F_SANS, fontSize: '12px',
                 color: 'rgba(255,255,255,0.6)', margin: 0
               }}>
-                Exclusive pricing for early registrations
+                Limited Inventory Available Hurry Now !
               </p>
             </div>
             <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>

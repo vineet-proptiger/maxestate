@@ -33,13 +33,13 @@ const Gallery = ({ setIsOpen }) => {
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em',
           }}>
-            A Glimpse of Your{' '}
-            <span style={{ color: 'var(--color-gold)' }}>Future Workspace</span>
+            A Life That{' '}
+            <span style={{ color: 'var(--color-gold)' }}>Awaits For You</span>
           </h2>
           <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
-          <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
+          {/* <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
             Step inside through a visual journey of spaces crafted for modern business
-          </p>
+          </p> */}
         </div>
 
         {/* Grid */}

@@ -35,9 +35,9 @@ const Amenities = ({ setIsOpen }) => {
             <span style={{ color: 'var(--color-gold)' }}>Wellness Amenities</span>
           </h2>
           <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
-          <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
+          {/* <p style={{ fontFamily: F_SANS, fontSize: '14px', color: '#6b7280', margin: 0 }}>
             Over 2,00,000 sq ft of curated amenities designed for sports, wellness, community and forest living
-          </p>
+          </p> */}
         </div>
 
         {/* Grid */}
