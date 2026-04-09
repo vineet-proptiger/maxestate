@@ -20,7 +20,7 @@ const units = [
   },
   {
     type: "2 BHK Floor Plan",
-    size: "1,565 sq ft",
+    size: "1535 &1565 sq ft",
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Ask Price",
@@ -32,8 +32,8 @@ const units = [
     isPopular: true,
   },
   {
-    type: "3 BHK Floor Plan",
-    size: "1700 sq ft",
+    type: "2 Bedroom (Loft)",
+    size: "1687 sqft",
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Ask Price",
