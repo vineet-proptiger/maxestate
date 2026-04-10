@@ -148,7 +148,7 @@ const Hero = ({ setIsOpen }) => {
                 'Exclusive New Tower Launch',
                 'Dedicated 1.2 Lakh Club House',
                 'EOI Amount at ₹ 25 Lakh',
-                '1.5 & 2 BHK Luxury Residences',
+                '1.5 & 2 BHK Serviced Apartments',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0' }}>
